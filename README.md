@@ -2,7 +2,7 @@
 
 Responsive front-end web framework developed using Sass.
 
-## Licence
+### Licence
 
 The MIT License (MIT)
 
@@ -26,13 +26,13 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-## Current Version
+### Current Version
 
 0.1
 
-## Changelog
+### Changelog
 
-** 0.1 (13 February 2015) **
+0.1 (13 February 2015)
 
 - Buttons
 - Border-Radius
@@ -42,6 +42,6 @@ THE SOFTWARE.
 - Box
 - Border-Box Mixin
 
-## Contributors
+### Contributors
 
 - Daniel Jackson
