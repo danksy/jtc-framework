@@ -1,0 +1,40 @@
+// _variables.scss
+// All variables used within the framework should be placed here.
+
+// full width
+$full-width: 100%;
+
+// Grid
+//
+// number of columns in the grid
+$grid-columns: 12;
+// maximum width of the grid
+$grid-max-width: 100%;
+
+// Breakpoints
+//
+// breakpoints - small
+$breakpoint-small: "only screen and (min-width: 20em)";
+// breakpoints - large
+$breakpoint-medium: "only screen and (min-width: 30em)"; 
+
+// Buttons
+//
+// default button - background colour
+$button-color: #008cba;
+// default button - hover colour 
+$button-color-hover: #007095;
+// default button - text colour
+$button-color-text: #ffffff;
+
+// Border
+//
+// border-radius for curved borders
+$border-radius: 5px;
+
+// Box
+//
+// background colour of the box
+$box-color: #ffffff;
+// border of the box
+$box-border: 1px solid #000000;

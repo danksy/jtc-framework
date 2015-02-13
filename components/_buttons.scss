@@ -1,0 +1,36 @@
+// Default Button
+//
+// standard button styling
+//
+// @author Daniel Jackson
+// @version 0.1
+//
+button{
+	padding: 1em 2em;
+	border: 0;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	background-color: $button-color;
+	color: $button-color-text;
+	&:hover, &:active, &:focus{
+		background-color: $button-color-hover;
+	}
+}
+
+// Custom Buttons
+//
+// Create custom buttons using parameters to style each button
+// 
+// @author Daniel Jackson
+// @version 0.1
+//
+// @param 1 - unique name of the button
+// @param 2 - button background colour
+// @param 3 - button hover colour
+// @param 4 - button text colour
+// @param 5 - border
+//
+@include button('secondary', #e7e7e7, #b9b9b9, #333333, 0);
+@include button('success', #43ac6a, #368a55, #ffffff, 0);
+@include button('alert', #f04124, #cf2a0e, #ffffff, 0);
