@@ -14,9 +14,9 @@ $grid-max-width: 100%;
 // Breakpoints
 //
 // breakpoints - small
-$breakpoint-small: "only screen and (min-width: 20em)";
+$breakpoint-small: "only screen and (max-width: 767px)";
 // breakpoints - large
-$breakpoint-medium: "only screen and (min-width: 30em)"; 
+$breakpoint-medium: "only screen and (min-width: 767px)";
 
 // Buttons
 //
@@ -27,14 +27,50 @@ $button-color-hover: #007095;
 // default button - text colour
 $button-color-text: #ffffff;
 
-// Border
+// Curved Border
 //
 // border-radius for curved borders
 $border-radius: 5px;
 
-// Box
+// Border
 //
-// background colour of the box
+// border width/size
+$border-width: 1px;
+// border type
+$border-type: solid;
+// border colour
+$border-color: #333333;
+
+// Banner
+//
+// image path/url for the full-width banner image
+$banner-image: 'http://www.hdwallpapers.in/walls/abstract_color_background_picture_8016-wide.jpg';
+// banner height
+$banner-height: 300px;
+// banner background image position
+$banner-position: center center;
+// banner repeat background image
+$banner-repeat: no-repeat;
+// banner background image size
+$banner-background-size: cover;
+
+// Box/Panel
+//
+// background colour of the box/panel
 $box-color: #ffffff;
-// border of the box
-$box-border: 1px solid #000000;
+
+// Header
+//
+// header background colour
+$header-color: #000000;
+// header height
+$header-height: 180px;
+
+// Footer
+//
+// footer background colour
+$footer-color: #000000;
+// footer height
+$footer-height: 180px;
+// footer margin-top (should be same as height - minus)
+$footer-margin-top: -$footer-height;

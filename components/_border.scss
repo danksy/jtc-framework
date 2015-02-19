@@ -1,9 +1,5 @@
 // Border Radius
-//
 // add a curved border to element(s)
-//
-// @author Daniel Jackson
-// @version 0.1
 //
 // placeholder - border-top-left-radius - include browser/vendor prefixes
 %curved-border-top-left{
@@ -56,10 +52,13 @@
 	@extend %curved-border-bottom-right;
 }
 
-// Border Box
+// Border
 //
-// @author Daniel Jackson
-// @version 0.1
+.border{
+	border: $border-width $border-type $border-color;
+}
+
+// Border Box
 //
 // placeholder - border-box - include browser/vendor prefixes
 %border-box{

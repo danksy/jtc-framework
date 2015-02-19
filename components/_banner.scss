@@ -1,0 +1,19 @@
+// Banner
+// full-width banner image
+//
+.banner{
+	display: block;
+	width: $full-width;
+	margin: 0 auto;
+	height: $banner-height;
+	background: url($banner-image); 
+	background-position: $banner-position;
+	background-repeat: $banner-repeat;
+
+	// vendor/browser prefixes applied
+  	@include prefix(background-size, $banner-background-size, webkit moz o);
+
+	// background cover - IE fix
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.$banner-image', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='$banner-image', sizingMethod='scale')";
+}

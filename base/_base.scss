@@ -1,0 +1,24 @@
+// Center-Align Text
+// center-align text within an element
+//
+.center-text{
+	text-align: center;
+}
+
+// Center-Align Block Elements
+// center-align block elements within an element - e.g Buttons, <div>
+//
+.center{
+	@extend .center-text;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Responsive/Fluid images
+//
+img{
+	width: auto;
+	max-width: 100%;
+	height: auto !important;
+}

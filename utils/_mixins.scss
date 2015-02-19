@@ -1,9 +1,5 @@
 // Vendor Prefix Mixin
-//
 // add the vendor/browser prefix of: -webkit, -moz, -ms and -o when required
-//
-// @author Daniel Jackson
-// @version 0.1
 //
 @mixin prefix($property, $value, $vendors: webkit moz ms o){
 	@if $vendors{
@@ -15,12 +11,8 @@
 }
 
 // Custom Button Mixin
-//
 // allow custom buttons to be created - parameters assigned with values for each button
 // components/_buttons.scss 'Custom Buttons'
-//
-// @author Daniel Jackson
-// @version 0.1
 //
 // @param 1 - unique name of the button
 // @param 2 - button background colour

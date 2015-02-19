@@ -1,0 +1,11 @@
+// Footer
+// full-width page footer at the bottom of the page
+//
+footer{
+	position: relative;
+	margin-top: $footer-margin-top;
+	height: $footer-height;
+	clear: both;
+	width: $full-width;
+	background: $footer-color;
+}

@@ -1,13 +1,8 @@
 // Box
-//
 // a box/panel that can be added to the grid
-//
-// @author Daniel Jackson
-// @version 0.1
 //
 .box{
 	display: block;
 	background: $box-color;
 	padding: 1em 1em;
-	border: $box-border;
 }
