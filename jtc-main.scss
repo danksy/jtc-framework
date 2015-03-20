@@ -1,22 +1,18 @@
 /*!
- * Just to Confirm (JTC) framework v0.1.1
+ * Just to Confirm (JTC) framework v0.2
  * http://www.justtoconfirm.co.uk/
  *
  * Copyright 2015, Daniel Jackson and other contributors
  * Released under the MIT license:
  * http://opensource.org/licenses/MIT
  */
-@import 'utils/mixins';
-@import 'utils/variables';
-
+@import 'base/variables';
+@import 'base/mixins';
 @import 'base/base';
-@import 'base/clearfix';
 @import 'base/grid';
 
-@import 'components/banner';
 @import 'components/buttons';
-@import 'components/border';
-@import 'components/box';
+@import 'components/panel';
 
 @import 'layout/header';
 @import 'layout/footer';

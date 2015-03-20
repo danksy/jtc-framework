@@ -1,9 +1,6 @@
-// Footer
-// full-width page header at the top of the page
-//
 header{
 	height: $header-height;
-	background: $header-color;
-	width: $full-width;
-	margin: 0 auto;
+	width: $full;
+	color: $header-text-color;
+	background-color: $header-color;
 }

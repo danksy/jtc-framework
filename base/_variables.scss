@@ -1,0 +1,56 @@
+// full size
+$full: 100%;
+
+// number of columns in the grid
+$grid-columns: 12;
+// maximum width of the grid
+$grid-max-width: $full;
+
+// medium breakpoint
+$breakpoint-medium: "only screen and (min-width: 767px)";
+// small breakpoint
+$breakpoint-small: "only screen and (max-width: 767px)";
+
+// header height
+$header-height: 60px;
+// footer height
+$footer-height: 120px;
+// space between the top of the footer and bottom of the page content
+$footer-spacing: 3em;
+
+// border radius - rounded/curved border corners
+$border-radius: 5px;
+
+// colours
+$black: #000000;
+$white: #ffffff;
+$blue: #008cba;
+$blue-dark: #007095;
+$green: #43ac6a;
+$green-dark: #368a55;
+$red: #f04124;
+$red-dark: #cf2a0e;
+$grey: #eeeeee;
+
+// background colour of the body
+$body-color: $white;
+// body text colour
+$body-text-color: $black;
+// base font size of the body
+$body-font-size: 16px;
+
+// hyperlink colour
+$link-color: $black;
+// hyperlink hover colour
+$link-hover-color: $black;
+
+// header background colour
+$header-color: $black;
+// header text colour
+$header-text-color: $white;
+
+// footer background colour
+$footer-color: $black;
+// footer text colour
+$footer-text-color: $white;
+

@@ -1,0 +1,9 @@
+// @param 1 - class name
+// @param 2 - background colour of the panel
+// @param 3 - text colour
+// @param 4 - border
+//
+// default panel
+@include panel('default', $grey, $black, 0);
+// grid panel - used for development to see the grid structure
+@include panel('grid', $blue, $white, 0);

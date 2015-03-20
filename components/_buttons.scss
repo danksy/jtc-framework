@@ -1,28 +1,12 @@
-// Default Button
-// standard button styling
-//
-button{
-	padding: 1em 2em;
-	border: 0;
-	text-decoration: none;
-	text-align: center;
-	cursor: pointer;
-	background-color: $button-color;
-	color: $button-color-text;
-	&:hover, &:active, &:focus{
-		background-color: $button-color-hover;
-	}
-}
-
-// Custom Buttons
-// Create custom buttons using parameters to style each button
-//
-// @param 1 - unique name of the button
-// @param 2 - button background colour
-// @param 3 - button hover colour
-// @param 4 - button text colour
+// @param 1 - class name
+// @param 2 - background colour of the button
+// @param 3 - hover colour of the button
+// @param 4 - text colour
 // @param 5 - border
 //
-@include button('secondary', #e7e7e7, #b9b9b9, #333333, 0);
-@include button('success', #43ac6a, #368a55, #ffffff, 0);
-@include button('alert', #f04124, #cf2a0e, #ffffff, 0);
+// default button - 'default'
+@include button('default', $blue, $blue-dark, $white, 0);
+// confirm button
+@include button('confirm', $green, $green-dark, $white, 0);
+// cancellation button
+@include button('cancel', $red, $red-dark, $white, 0);

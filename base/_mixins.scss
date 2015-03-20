@@ -1,0 +1,32 @@
+// vendor/browser prefix mixin
+@mixin prefix($property, $value, $vendors: webkit moz ms o){
+	@if $vendors{
+		@each $vendor in $vendors{
+			#{"-" + $vendor + "-" + $property}: #{$value};
+		}
+	}
+	#{$property}: #{$value};
+}
+
+// button mixin
+@mixin button($btn-name, $btn-color, $btn-hover, $btn-color-text, $btn-border){
+	.#{$btn-name}{
+		@extend button;
+		background-color: $btn-color;
+		color: $btn-color-text;
+		border: $btn-border;
+		&:hover, &:active, &:focus{
+			background-color: $btn-hover;
+		}
+	}
+}
+
+// panel mixin
+@mixin panel($panel-name, $panel-color, $panel-color-text, $panel-border){
+	.#{$panel-name}-panel{
+		@extend .panel;
+		background-color: $panel-color;
+		color: $panel-color-text;
+		border: $panel-border;
+	}
+}

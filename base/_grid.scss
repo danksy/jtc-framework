@@ -1,15 +1,39 @@
-// Grid
-// Responsive Grid Structure
-//
-*, *:after, *:before{
+%clearfix{
+	.cf:before,
+	.cf:after{
+		content: " ";
+		display: table;
+        clear: both;
+	}
+	.cf:after{
+		clear: both;
+	}
+	.cf{
+		*zoom: 1;
+	}
+}
+
+*, *:before, *:after{
     margin: 0;
     padding: 0;
     @extend %border-box;
 }
 
 .wrapper{
-    width: $full-width;
+    width: $full;
     margin: 0 auto;
+    // for page footer
+    min-height: $full;
+    // equal to the footer height
+    margin-bottom: -$footer-height;
+}
+
+.wrapper:after{
+    content: "";
+    display: block;
+    height: $footer-height;
+    margin-bottom: $footer-spacing;
+    clear: both;
 }
  
 .wrapper, .row{
@@ -19,7 +43,7 @@
 [class*='column-']{
     float: left;
     padding: 1em;
-    width: $full-width;
+    width: $full;
     min-height: 1px; 
 }   
  
@@ -30,7 +54,7 @@
     }
     @for $i from 1 through $grid-columns{      
         .column-#{$i}{         
-            width: $full-width / $grid-columns * $i;   
+            width: $full / $grid-columns * $i;   
         }           
     }   
 }

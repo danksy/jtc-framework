@@ -1,13 +1,27 @@
-// Center-Align Text
-// center-align text within an element
-//
+html, body{
+	width: $full;
+	height: $full;
+	margin: 0 auto;
+	padding: 0 auto;
+	color: $body-text-color;
+	background-color: $body-color;
+	font-size: $body-font-size;
+	// hyperlinks
+	a{
+		color: $link-color;
+		text-decoration: none;
+		&:hover, &:active, &:focus{
+			color: $link-hover-color;
+			text-decoration: none;
+		}
+	}
+}
+
+// center text
 .center-text{
 	text-align: center;
 }
-
-// Center-Align Block Elements
-// center-align block elements within an element - e.g Buttons, <div>
-//
+// center block elements
 .center{
 	@extend .center-text;
 	display: block;
@@ -15,10 +29,34 @@
 	margin-right: auto;
 }
 
-// Responsive/Fluid images
-//
+// border box
+%border-box{
+	@include prefix(box-sizing, border-box, webkit moz ms);
+}
+
+// curved/rounded border corners
+.curved-border{
+	@include prefix(border-radius, $border-radius, webkit moz ms);
+}
+
+// panel
+.panel{
+	width: $full;
+	display: block;
+	padding: 1em;
+}
+
+// responsive/fluid images
 img{
 	width: auto;
-	max-width: 100%;
+	max-width: $full;
 	height: auto !important;
+}
+
+// button
+button{
+	@extend .center-text;
+	padding: 1em 2em;
+	text-decoration: none;
+	cursor: pointer;
 }
